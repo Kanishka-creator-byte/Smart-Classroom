@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #eef1f7;
+}
+
+.center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.header {
+  background:#4a5d73;
+  color:white;
+  padding:15px;
+}
+
+.container { padding:20px; }
+
+.card {
+  background:white;
+  padding:20px;
+  border-radius:15px;
+}
+
+.login { width:300px; }
+
+input, select {
+  width:100%;
+  padding:10px;
+  margin:5px 0;
+  border-radius:8px;
+}
+
+button {
+  padding:10px;
+  margin:5px;
+  border:none;
+  border-radius:20px;
+  background:#4CAF50;
+  color:white;
+}
+
+.back { background:#4a5d73; }
+
+.dashboard-grid {
+  display:flex;
+  gap:20px;
+}
+
+.dash-btn {
+  flex:1;
+  padding:20px;
+  border-radius:12px;
+  color:white;
+  text-align:center;
+  cursor:pointer;
+}
+
+.orange {background:#f59e0b;}
+.blue {background:#3b82f6;}
+
+#grid {
+  display:grid;
+  gap:20px;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.bench {
+  width:220px;
+  height:70px;
+  background:#f3e5c0;
+  border:2px solid #8b5e3c;
+  display:flex;
+  justify-content:space-between;
+  padding:6px;
+}
+
+.studentBox {
+  width:48%;
+  font-size:10px;
+  text-align:center;
+}

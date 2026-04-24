@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Teacher Panel</h1>
+
+<h3>Upload Student File (CSV)</h3>
+<input type="file" id="fileInput">
+<button onclick="loadFile()">Load Students</button>
+
+<h3>Classroom Setup</h3>
+<input id="rows" placeholder="Rows">
+<input id="cols" placeholder="Columns">
+<button onclick="setup()">Create Layout</button>
+
+<button onclick="generate()">Generate Seating</button>
+
+<h2>Classroom Seating</h2>
+<p><b>Front</b></p>
+
+<div id="grid"></div>
+
+<p><b>Back</b></p>
+
+<script src="script.js"></script>
+</body>
+</html>

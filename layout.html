@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="back" onclick="goBack()">⬅ Back</button>
+
+<div class="container">
+
+<h2>Classroom Layout</h2>
+
+<input id="rowsInput" placeholder="Rows">
+<input id="colsInput" placeholder="Columns">
+
+<select id="mode">
+  <option value="shuffle">Shuffle</option>
+  <option value="roll">Roll No Wise</option>
+</select>
+
+<select id="perBench">
+  <option value="1">1 per bench</option>
+  <option value="2">2 per bench</option>
+</select>
+
+<select id="sameDiff">
+  <option value="same">Same</option>
+  <option value="diff">Different</option>
+</select>
+
+<select id="byWhat">
+  <option value="dept">Department</option>
+  <option value="class">Class</option>
+</select>
+
+<button onclick="generate()">Generate Seating</button>
+<button onclick="downloadPDF()">Download PDF</button>
+
+<h3>FRONT</h3>
+<div id="grid"></div>
+<h3>BACK</h3>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

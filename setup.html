@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Setup Classroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="back" onclick="goBack()">⬅ Back</button>
+
+<div class="container">
+
+<h2>Setup Classroom</h2>
+
+<input id="roomInput" placeholder="Room No">
+<input id="invigilator" placeholder="Invigilator Name">
+
+<button onclick="saveRoom()">Save Classroom</button>
+
+<p>CSV format: rollno,name,div,class,department</p>
+
+<input type="file" id="fileInput" multiple>
+<button onclick="loadFile()">Upload CSV</button>
+
+<h3>Manual Entry</h3>
+
+<input id="name" placeholder="Name">
+<input id="roll" placeholder="Roll No">
+<input id="cls" placeholder="Class">
+<input id="dept" placeholder="Department">
+
+<button onclick="addStudent()">Add Student</button>
+
+<br><br>
+<button onclick="goLayout()">Next →</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
